@@ -1,0 +1,137 @@
+/* Canvas/frame for Screen 1 */
+.screen.screen-1 {
+  position: relative;
+  width: 393px;
+  height: 852px;
+  background: var(--style-0-bg); /* style_0: color_f2f2f2 */
+  overflow: hidden;
+  margin: 0 auto; /* center on larger viewports */
+}
+
+/* Base node styling */
+.node {
+  position: absolute;
+  image-rendering: auto;
+}
+
+/* Wall Polygon (1:5) */
+.wall-polygon {
+  left: 0px;           /* x: ~0 */
+  top: 0px;            /* y: 0 */
+  width: 393px;        /* width: 393 */
+  height: 482px;       /* height: 482 */
+  object-fit: cover;
+  background: var(--style-1-bg); /* style_1 background color reference */
+}
+
+/* Illustration (1:3) */
+.illustration {
+  left: 89px;
+  top: 152px;
+  width: 200px;
+  height: 374.7484130859px;
+  object-fit: cover;
+}
+
+/* Heading (3:2) with typo_9 */
+.heading {
+  left: 29px;
+  top: 540px;
+  width: 335px;
+  height: 71px;
+  font-family: var(--font-family-poppins);
+  font-size: var(--typo-9-size);
+  font-weight: var(--typo-9-weight);
+  line-height: var(--typo-9-line-height);
+  letter-spacing: var(--typo-9-letter-spacing);
+  text-align: var(--typo-9-text-align);
+  color: var(--typo-9-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Ensures pixel-accurate line-height handling */
+  white-space: normal;
+}
+
+/* Subheading (3:26) with typo_10 */
+.subheading {
+  left: 29px;
+  top: 626px;
+  width: 335px;
+  height: 71px;
+  font-family: var(--font-family-poppins);
+  font-size: var(--typo-10-size);
+  font-weight: var(--typo-10-weight);
+  line-height: var(--typo-10-line-height);
+  letter-spacing: var(--typo-10-letter-spacing);
+  text-align: var(--typo-10-text-align);
+  color: var(--typo-10-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: normal;
+}
+
+/* Get Started Button Group (5:38) */
+.get-started-btn {
+  left: 124px;
+  top: 722px;
+  width: 145px;
+  height: 38px;
+  position: absolute;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Button background rectangle (5:31) style_3: ff8383 + radius 5 */
+.get-started-btn .btn-bg {
+  position: absolute;
+  left: 0px; top: 0px;
+  width: 145px; height: 38px;
+  background: var(--style-3-bg);
+  border-radius: var(--style-3-radius);
+}
+
+/* Button content group (5:37) */
+.get-started-btn .btn-content {
+  position: absolute;
+  left: 18px; /* 142 - 124 */
+  top: 6px;   /* 728 - 722 */
+  width: 109px;
+  height: 25px;
+}
+
+/* Button text (5:34) with typo_11 */
+.get-started-btn .btn-text {
+  position: absolute;
+  left: 0px;         /* within the content group */
+  top: 2px;          /* 730 - 728 */
+  width: 80px;
+  height: 21px;
+  display: block;
+  font-family: var(--font-family-poppins);
+  font-size: var(--typo-11-size);
+  font-weight: var(--typo-11-weight);
+  line-height: var(--typo-11-line-height);
+  letter-spacing: var(--typo-11-letter-spacing);
+  text-align: var(--typo-11-text-align);
+  color: var(--typo-11-color);
+}
+
+/* Button icon (5:36) */
+.get-started-btn .btn-icon {
+  position: absolute;
+  left: 84px;  /* 226 - 142 */
+  top: 0px;    /* 728 - 728 */
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+/* Optional hover/focus states (not specified in figma, added minimally without visual deviation) */
+.get-started-btn:focus-visible .btn-bg {
+  outline: 2px solid rgba(0,0,0,0.25);
+  outline-offset: 2px;
+}

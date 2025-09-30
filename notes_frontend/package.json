@@ -4,12 +4,13 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "eslint .",
     "prebuild:android": "expo prebuild --platform android",
-    "build": "npm run prebuild:android && cd android && ./gradlew assembleDebug"
+    "build": "npm run prebuild:android && cd android && ./gradlew assembleDebug",
+    "android:check-safe": "bash ../scripts/safe-gradle-check.sh"
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",

@@ -1,0 +1,128 @@
+:root {
+  /* Color tokens */
+  --color-f2f2f2: #f2f2f2;
+  --color-ff8383: #ff8383;
+  --color-000000: #000000;
+  --color-1e1e1e: #1e1e1e;
+  --color-b7b7b7: #b7b7b7;
+  --color-9ddcff: #9ddcff;
+  --color-fff59d: #fff59d;
+  --color-83ff90: #83ff90;
+  --color-ffba9d: #ffba9d;
+  --color-d9d9d9: #d9d9d9;
+
+  /* Typography tokens (sizes in px, line-heights in px) */
+  --font-family-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* typo_9 */
+  --typo-9-size: 20px;
+  --typo-9-weight: 600;
+  --typo-9-line-height: 30px;
+  --typo-9-letter-spacing: 0px;
+  --typo-9-color: var(--color-000000);
+  --typo-9-text-align: center;
+
+  /* typo_10 */
+  --typo-10-size: 14px;
+  --typo-10-weight: 400;
+  --typo-10-line-height: 21px;
+  --typo-10-letter-spacing: 0px;
+  --typo-10-color: var(--color-000000);
+  --typo-10-text-align: center;
+
+  /* typo_11 */
+  --typo-11-size: 14px;
+  --typo-11-weight: 400;
+  --typo-11-line-height: 21px;
+  --typo-11-letter-spacing: 0px;
+  --typo-11-color: var(--color-f2f2f2);
+  --typo-11-text-align: center;
+
+  /* Additional typography tokens declared for completeness */
+  --typo-0-size: 20px;
+  --typo-0-weight: 600;
+  --typo-0-line-height: 30px;
+  --typo-1-size: 14px;
+  --typo-1-weight: 400;
+  --typo-1-line-height: 21px;
+  --typo-2-size: 20px; --typo-2-weight: 600; --typo-2-line-height: 30px;
+  --typo-3-size: 20px; --typo-3-weight: 400; --typo-3-line-height: 30px;
+  --typo-4-size: 10px; --typo-4-weight: 500; --typo-4-line-height: 20px;
+  --typo-5-size: 10px; --typo-5-weight: 500; --typo-5-line-height: 20px;
+  --typo-6-size: 10px; --typo-6-weight: 500; --typo-6-line-height: 15px;
+  --typo-7-size: 30px; --typo-7-weight: 600; --typo-7-line-height: 45px;
+  --typo-8-size: 14px; --typo-8-weight: 500; --typo-8-line-height: 20px;
+  --typo-12-size: 20px; --typo-12-weight: 600; --typo-12-line-height: 30px;
+  --typo-13-size: 20px; --typo-13-weight: 600; --typo-13-line-height: 30px;
+  --typo-14-size: 20px; --typo-14-weight: 400; --typo-14-line-height: 30px;
+  --typo-15-size: 10px; --typo-15-weight: 500; --typo-15-line-height: 20px;
+  --typo-16-size: 10px; --typo-16-weight: 500; --typo-16-line-height: 20px;
+  --typo-17-size: 10px; --typo-17-weight: 500; --typo-17-line-height: 15px;
+  --typo-18-size: 20px; --typo-18-weight: 600; --typo-18-line-height: 30px;
+  --typo-19-size: 30px; --typo-19-weight: 600; --typo-19-line-height: 45px;
+  --typo-20-size: 14px; --typo-20-weight: 500; --typo-20-line-height: 20px;
+  --typo-21-size: 14px; --typo-21-weight: 500; --typo-21-line-height: 20px;
+
+  /* Radius tokens */
+  --radius-0-5: 0.5px;
+  --radius-5: 5px;
+  --radius-9: 9px;
+  --radius-25: 25px;
+  --radius-30: 30px;
+
+  /* Style tokens map (backgrounds and radii from styles) */
+  --style-0-bg: var(--color-f2f2f2);
+  --style-1-bg: var(--color-ff8383);
+  --style-2-bg: var(--color-000000);
+  --style-3-bg: var(--color-ff8383);
+  --style-3-radius: var(--radius-5);
+
+  /* Spacing scale (exposed for potential layout use) */
+  --space-2: 2px; --space-4: 4px; --space-5: 5px; --space-8: 8px;
+  --space-14: 14px; --space-15: 15px; --space-17: 17px; --space-21: 21px;
+  --space-25: 25px; --space-26: 26px; --space-29: 29px; --space-30: 30px;
+  --space-34: 34px; --space-35: 35px; --space-36: 36px; --space-38: 38px;
+  --space-39: 39px; --space-41: 41px; --space-42: 42px; --space-45: 45px;
+  --space-46: 46px; --space-48: 48px; --space-51-5: 51.5px; --space-57: 57px;
+  --space-69: 69px; --space-71: 71px; --space-75: 75px; --space-80: 80px;
+  --space-87: 87px; --space-92: 92px; --space-94: 94px; --space-100: 100px;
+  --space-102-5048: 102.50481414794922px; --space-106: 106px; --space-108: 108px;
+  --space-109: 109px; --space-110: 110px; --space-119-5: 119.5px; --space-126: 126px;
+  --space-127: 127px; --space-129: 129px; --space-132: 132px; --space-142: 142px;
+  --space-145: 145px; --space-151: 151px; --space-152: 152px; --space-153-5: 153.5px;
+  --space-197-5: 197.5px; --space-199: 199px; --space-200: 200px; --space-236: 236px;
+  --space-254: 254px; --space-335: 335px; --space-374-7484: 374.7484130859375px;
+  --space-392-5: 392.5px; --space-393: 393px; --space-482: 482px; --space-852: 852px;
+}
+
+/* Global resets and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family-poppins);
+  background: var(--style-0-bg);
+  color: var(--color-000000);
+}
+
+/* Utility: visually hidden (if needed later) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
